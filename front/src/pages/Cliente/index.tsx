@@ -10,19 +10,9 @@ import { createRequest } from '../../store/modules/cliente/actions';
 
 import { Container, Content } from './styles';
 import history from '../../services/history';
+import EnderecoInterface from '../../interface/Endereco';
 
-interface EnderecoInterface{
-    "cep": string,
-    "logradouro": string,
-    "complemento": string,
-    "bairro": string,
-    "localidade": string,
-    "uf": string,
-    "ibge": string,
-    "gia": string,
-    "ddd": string,
-    "siafi":string
-  }
+
 
 const Cliente: React.FC = () => {
     const [endereco, setEndereco] = useState<EnderecoInterface | null>();
