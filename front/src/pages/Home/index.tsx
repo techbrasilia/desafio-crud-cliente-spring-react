@@ -54,7 +54,7 @@ const Home: React.FC = () => {
                         <Linha key={cliente.id}>
                             <td>{cliente.nome}</td>
                             <td>{cliente.cpf}</td>
-                            <td>{cliente.endereco.cidade}</td>
+                            <td>{cliente.endereco?.localidade}</td>
                             <td>{cliente.endereco.uf}</td>
                         </Linha>
                     ))}

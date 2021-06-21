@@ -12,7 +12,7 @@ export function createRequest(data:ClienteInterface) {
           cep: data.endereco.cep,
           logradouro: data.endereco.logradouro,
           bairro: data.endereco.bairro,
-          cidade: data.endereco.cidade,
+          localidade: data.endereco.localidade,
           uf: data.endereco.uf,
         }
       },

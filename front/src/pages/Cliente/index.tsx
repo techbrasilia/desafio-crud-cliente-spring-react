@@ -89,7 +89,7 @@ const Cliente: React.FC = () => {
                     </div>
                     <div>
                         <label>cidade</label>
-                        <Input type="text" name="endereco.cidade" value={endereco?.localidade || null} />
+                        <Input type="text" name="endereco.localidade" value={endereco?.localidade || null} />
                     </div>
                     <div>
                         <label>Complemento</label>
