@@ -16,9 +16,8 @@ import EnderecoInterface from '../../interface/Endereco';
 
 const Cliente: React.FC = () => {
     const [endereco, setEndereco] = useState<EnderecoInterface | null>();
-    const [cliente, setCliente] = useState<ClienteInterface | null>();
+    // const [cliente, setCliente] = useState<ClienteInterface | null>();
     const [search, setSearch] = useState('');
-    const [error, setError] = useState(false);
     const dispatch = useDispatch();
     
 
@@ -28,11 +27,10 @@ const Cliente: React.FC = () => {
             .then(response => response.json())
             .then(data => {
                 setEndereco(data);
-                setError(false);
                 console.log('endereco:', endereco)
             })
             .catch(err => {
-                setError(true);
+                console.log(err)
             })
         }
 
@@ -55,7 +53,7 @@ const Cliente: React.FC = () => {
       }
 
     function handleGoBack() {
-    history.back();
+    history.goBack();
     }
 
     return (

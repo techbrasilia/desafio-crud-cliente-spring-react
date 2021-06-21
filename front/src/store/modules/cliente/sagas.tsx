@@ -1,6 +1,7 @@
 import { takeLatest, call, put, all } from 'redux-saga/effects';
 import { toast } from 'react-toastify';
 
+import history from '../../../services/history';
 import api from '../../../services';
 
 import {
@@ -41,6 +42,8 @@ export function* create({ payload }: any):any {
       yield put(createSuccess(response.data));
 
       toast.success('Cadastrado com sucesso.');
+
+      history.push('home');
     }
   } catch (error) {
     toast.error('Falha ao cadastrar.');
@@ -62,6 +65,7 @@ export function* excluir({ payload }: any): any {
     yield put(deleteSuccess(response.data));
 
     toast.success('Excluído com sucesso.');
+    history.push('home');
   } catch (error) {
     toast.error('Falha ao excluir.');
     yield put(deleteFailure());

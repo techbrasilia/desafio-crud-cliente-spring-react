@@ -12,6 +12,7 @@ front/npm-debug.log*
 front/yarn-debug.log*
 front/yarn-error.log*
 front/pnpm-debug.log*
+front/build
 
 # Editor directories and files
 front/.idea
@@ -27,3 +28,4 @@ backend/target
 backend/.settings
 backend/.classpath
 backend/.project
+
