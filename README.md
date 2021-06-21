@@ -7,7 +7,7 @@
 ## senha: 123456
 
 
-#Front-end:
+# Front-end:
 
 ## iniciar com yarn start
 ## ERRO: As telas estão com problema ao carregar. Atualizar (F5) para carregar (EM CORREÇÃO)
