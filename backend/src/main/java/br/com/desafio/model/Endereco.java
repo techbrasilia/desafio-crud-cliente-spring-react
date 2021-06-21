@@ -37,7 +37,7 @@ public class Endereco {
 
 	@Column(nullable = false)
 	@NotBlank(message = "Cidade é obrigatório")
-	private String cidade;
+	private String localidade;
 
 	@Column(length = 2 ,nullable = false)
 	@NotBlank(message = "UF é obrigatório")
@@ -92,12 +92,12 @@ public class Endereco {
 		this.bairro = bairro;
 	}
 
-	public String getCidade() {
-		return cidade;
+	public String getLocalidade() {
+		return localidade;
 	}
 
-	public void setCidade(String cidade) {
-		this.cidade = cidade;
+	public void setLocalidade(String localidade) {
+		this.localidade = localidade;
 	}
 
 	public String getUf() {

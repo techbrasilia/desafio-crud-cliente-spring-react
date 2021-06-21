@@ -17,7 +17,7 @@ public class EnderecoDTO {
 	
 	private String bairro;
 	
-	private String cidade;
+	private String localidade;
 	
 	private String uf;
 	
@@ -67,12 +67,12 @@ public class EnderecoDTO {
 		this.bairro = bairro;
 	}
 
-	public String getCidade() {
-		return cidade;
+	public String getLocalidade() {
+		return localidade;
 	}
 
-	public void setCidade(String cidade) {
-		this.cidade = cidade;
+	public void setLocalidade(String localidade) {
+		this.localidade = localidade;
 	}
 
 	public String getUf() {
